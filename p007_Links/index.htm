@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- By default, a link will appear like this (in all browsers):
+    An unvisited link is underlined and blue
+    A visited link is underlined and purple
+    An active link is underlined and red
+  You can change the default colors, by using CSS -->
+  <style>
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: orange;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    /* style a link when mouse over it */
+    a:hover {
+      color:red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    /* A link becomes active when you click on it. */
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- The target attribute specifies where to open the linked document.
+  _blank - Opens the linked document in a new window or tab
+  _self - Opens the linked document in the same window/tab as it was clicked (this is default)
+  _parent - Opens the linked document in the parent frame
+  _top - Opens the linked document in the full body of the window
+  framename - Opens the linked document in a named frame -->
+  <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools in new tab!</a>
+
+  <!-- It is common to use images as links: -->
+  <!-- The title attribute specifies extra information about an element.
+  The information is most often shown as a tooltip text when the mouse moves over the element.
+  We have added "border:0" to prevent IE9 (and earlier) from displaying a border around the image -->
+  <p>The image is a link. You can click on it.</p>
+  <a href="https://www.pexels.com/search/cat/">
+    <img src="cat.png"
+      alt="Search cats on pixels"
+      title="Search cats on pixels"
+      style="width:100px; height:100px; border:0">
+  </a>
+  <br>
+
+  <!-- HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+  Bookmarks can be useful if your webpage is very long.
+  You can add link from within the same page:-->
+  <a href="#chapter4">Jump to Chapter 4 from this page</a>
+  <br>
+  <!-- or add link to the bookmark from another page -->
+  <a href="html_demo.html#chapter1">Jump to Chapter 1 from another page</a>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <h2 id="chapter4">Chapter 4</h2>
+</body>
+</html>
