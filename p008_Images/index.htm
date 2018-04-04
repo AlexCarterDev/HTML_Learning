@@ -1,0 +1,74 @@
+<head>
+  <style>
+    img {
+      width:100%
+    }
+  </style>
+</head>
+<body>
+  <!-- Note: -->
+  <!-- The alt attribute is required. A web page will not validate correctly without it. -->
+  <!-- Always specify the width and height of an image.
+  If width and height are not specified, the page might flicker while the image loads. -->
+
+
+  <!-- The width, height, and style attributes are valid in HTML5.
+  However, we suggest using the style attribute. It prevents styles sheets from changing the size of images: -->
+  <p>The image below has the width attribute set to 128 pixels, but the stylesheet overrides it, and sets the width to 100%.</p>
+  <img src="html5.png" alt="HTML5 Icon" width="128" height="128">
+  <p>The image below uses the style attribute, where the width is set to 128 pixels which overrides the stylesheet:</p>
+  <img src="html5.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+  <!-- Some web sites store their images on image servers.
+  Actually, you can access images from any web address in the world: -->
+  <p>Image on another server</p>
+  <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+
+  <!-- Use the CSS float property to let the image float to the right or to the left of a text: -->
+  <p>
+    <img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.
+  </p>
+  <p>
+    <img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image will float to the left of the text.
+  </p>
+  <br>
+  <!-- Use the <map> tag to define an image-map. An image-map is an image with clickable areas. -->
+  <p>Computer, telephone or apple clickable on the image below:</p>
+  <img src="apple-computer-desk-18105.jpg" alt="Workspace" usemap="#my_workmap" style="width:518; height:345">
+  <map name="my_workmap">
+    <area  alt="Smartphone" title="Smartphone" href="android-android-phone-apps-47261.jpg" shape="poly" coords="82,320,163,309,107,250,44,263" style="outline:none;" target="_self"     />
+    <area  alt="Computer" title="Computer" href="code-coding-computer-34676.jpg" shape="poly" coords="113,225,186,298,470,262,379,195,356,15,94,33" style="outline:none;" target="_self"     />
+    <area  alt="Apple" title="Apple" href="apple-7.jpg" shape="poly" coords="471,154,457,157,445,165,437,177,434,191,437,205,445,217,457,225,471,228,485,225,497,217,505,205,508,191,505,177,497,165,485,157" style="outline:none;" target="_self"     />
+  </map>
+
+  <p style="background-image:url('clouds.jpg')">
+    You can specify background images<br>
+    for any visible HTML element.<br>
+    In this example, the background image<br>
+    is specified for this paragraph.<br>
+    By default, the background-image<br>
+    will repeat itself in the direction(s)<br>
+    where it is smaller than the element<br>
+    where it is specified. (Try resizing the<br>
+    browser window to see how the<br>
+    background image behave.
+  </p>
+
+  <!-- The <picture> element contains a number of <source> elements, each referring to different image sources.
+  This way the browser can choose the image that best fit the current view and/or device. -->
+  <!-- Each <source> element have attributes describing when their image is the most suitable. -->
+  <!-- The browser will use the first <source> element with matching attribute values, and ignore any following <source> elements. -->
+  <!-- The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier. -->
+  <!-- Always specify an <img> element as the last child element of the <picture> element.
+  The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags matched. -->
+  <p> Resize the browser to see different versions of the picture loading at different viewport sizes. </p>
+  <picture>
+    <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg"/>
+    <source media="(min-width: 465px)" srcset="img_white_flower.jpg"/>
+    <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"/>
+  </picture>
+
+
+</body>
