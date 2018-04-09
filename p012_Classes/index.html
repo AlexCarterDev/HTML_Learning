@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* implement for HTTP elements with attribute class city*/
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    }
+    .main {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="hideElemenstWithCityClass()">
+    Hide elements with attribute class city
+  </button>
+  <br>
+  <br>
+  <button onclick="showElementsWithCityClass()">
+    Show elements with attribute class city
+  </button>
+
+
+  <!-- The class attribute specifies one or more class names for an HTML element.
+  The class name can be used by CSS and JavaScript to perform certain tasks
+  for elements with the specified class name. -->
+  <!-- Note: The class name is case sensitive! -->
+  <h3 class="city main">London</h3>
+  <p>London is the capital of England.</p>
+  <h3 class="city">Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+
+  <script>
+    function hideElemenstWithCityClass() {
+      var x = document.getElementsByClassName("city");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    }
+    function showElementsWithCityClass() {
+      var x = document.getElementsByClassName("city");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
