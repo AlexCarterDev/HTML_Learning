@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- The id attribute specifies a unique id for an HTML element
+    (the value must be unique within the HTML document).
+  The id value can be used by CSS and JavaScript to perform certain tasks
+    for a unique element with the specified id value
+  In CSS, to select an element with a specific id, write a hash (#) character,
+    followed by the id of the element:
+  Note: The id value is case-sensitive.-->
+  <style>
+    #myHeader {
+      background-color: orange;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="displayResult()">
+    Change header text
+  </button>
+  <h1 id="myHeader">My unique header</h1>
+
+  <!-- HTML bookmarks are used to allow readers to jump to specific parts of a Web page -->
+  <!-- Jump to bookmark from within page -->
+  <a href="#C4">Jump to Chapter 4</a>
+  <!-- Make page very long -->
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <!-- Unique bookmark -->
+  <h2 id="C4">Chapter 4</h2>
+
+
+  <!-- Using The id Attribute in JavaScript -->
+  <script>
+    function displayResult() {
+      document.getElementById("myHeader").innerHTML = "Hello :)"
+    }
+  </script>
+</body>
+</html>
