@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <!-- JavaScript makes HTML pages more dynamic and interactive. -->
+
+  <button type="button" onclick="document.getElementById('p_date').innerHTML = Date()">
+    Show current system time
+  </button>
+  <!-- if p is empty it will not behave like non-blocking element, add breaking line for fix that -->
+  <p id="p_date"><br></p>
+  <br>
+
+  <p>Paragraph content below was init by script</p>
+  <p id="p_init"></p>
+  <br>
+
+  <button onclick="changeStyle()">Change Style</button> <br>
+  <p id="p_style">This text will change style by click</p>
+  <br>
+
+  <p>Change attributes</p>
+  <img id="light" src="pic_bulboff.gif" width="100" height="180">
+  <p>
+    <button onclick="light(0)">Light Off</button>
+    <button onclick="light(1)">Light On</button>
+  </p>
+
+  <!-- The <script> tag is used to define a client-side script (JavaScript). -->
+  <script>
+    // if place this to beginning, then paragraph content will be empty
+    // i think that happend because of order.
+    // for example: if script below element, than first: element will
+    // initilize by html, than JavaScript
+    document.getElementById('p_init').innerHTML = "Hello, im appear here by JavaScript";
+
+    function changeStyle() {
+      var p = document.getElementById("p_style");
+      p.style.color = "white";
+      p.style.backgroundColor = "orange";
+    }
+
+    function light(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "pic_bulboff.gif";
+      } else {
+        pic = "pic_bulbon.gif";
+      }
+      document.getElementById('light').src = pic;
+    }
+
+  </script>
+
+  <!-- The <noscript> tag is used to provide an alternate content for users
+  that have disabled scripts in their browser or have a browser that doesn't
+  support client-side scripts:
+  HTML content will display as usually -->
+
+  <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+</body>
+</html>
