@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  div.container {
+    width: 100%;
+    border: 3px solid gray;
+
+  }
+  header, footer {
+    /* Relative to the font-size of the element
+    (2em means 2 times the size of the current font) */
+    padding: 1em;
+    color: white;
+    background-color: black;
+    /* The clear property specifies on which sides of an element
+    floating elements are not allowed to float.
+    For example: if you place <p> after <img>, content of <p> will be
+    float to left (to right side of image). If you set property
+    clear: left to <p>, then content of <p> will not float to left,
+    instead content will be placed below image.
+    The question is why this property is here?
+    May be for save? Then why the value is not both? */
+    clear: left;
+    text-align: center;
+  }
+  nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav ul a {
+    text-decoration: none;
+  }
+  article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- The <header> element represents a container for introductory
+    content or a set of navigational links.
+    A <header> element typically contains:
+      - one or more heading elements (<h1> - <h6>)
+      - logo or icon
+      - authorship information
+    -->
+    <header>
+      <h1>City Gallery</h1>
+    </header>
+
+    <!-- The <nav> tag defines a set of navigation links.
+    The <nav> element is intended for major block of navigation links.
+    Browsers, such as screen readers for disabled users, can use this element
+    to determine whether to omit the initial rendering of this content.
+    -->
+    <nav>
+      <ul>
+        <li><a href="#not_implemented">London</a></li>
+        <li><a href="#not_implemented">Paris</a></li>
+        <li><a href="#not_implemented">Tokyo</a></li>
+      </ul>
+    </nav>
+
+    <!-- The <article> tag specifies independent, self-contained content.
+    An article should make sense on its own and it should be possible
+    to distribute it independently from the rest of the site.
+    Potential sources for the <article> element:
+      - Forum post
+      - Blog post
+      - News story
+      - Comment
+    -->
+    <article>
+      <h1>London</h1>
+      <p>London is the capital city of England. It is the most populous city
+        in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      <p>Standing on the River Thames, London has been a major settlement
+        for two millennia, its history going back to its founding by the Romans,
+        who named it Londinium.</p>
+    </article>
+
+    <!-- The <footer> tag defines a footer for a document or section.
+    A <footer> element typically contains:
+      - authorship information
+      - copyright information
+      - contact information
+      - sitemap
+      - back to top links
+      - related documents
+    -->
+    <footer>Copyright &copy; W3Schools.com</footer>
+  </div>
+</body>
+</html>
