@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .left, .right {
+      float: left;
+      width: 20%;
+    }
+
+    .main {
+      float: left;
+      width: 60%;
+    }
+
+    .blue_bg {
+      background-color: deepskyblue;
+    }
+    .green_bg {
+      background-color: limegreen;
+    }
+    /* Set new values to properties when the viewport
+    is 800px or smaller */
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="left blue_bg">
+    <p>Left content</p>
+  </div>
+
+  <div class="main">
+    <p>Main content</p>
+  </div>
+
+  <div class="right green_bg">
+    <p>Right content</p>
+  </div>
+</body>
+</html>
