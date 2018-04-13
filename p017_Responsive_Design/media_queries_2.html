@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .header {
+      background-color: lightgray;
+      color: gray;
+      padding: 10px;
+      text-align: center;
+      display: block;
+    }
+    .links {
+      float: left;
+      width: 20%;
+    }
+    .links a {
+      overflow: hidden;
+      float: none;
+      background-color: lightgray;
+      display: block;
+      margin-bottom: 6px;
+      padding: 8px;
+    }
+    .article {
+      width: 60%;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      background-color: lightgray;
+    }
+    .about {
+      overflow: hidden;
+      background-color: lightgray;
+      color: gray;
+    }
+    .main {
+      overflow: hidden;
+      background-color: lightgreen;
+      margin-top: 6px;
+      margin-bottom: 0px;
+    }
+    .copyright {
+      width:100%;
+      text-align: center;
+      background-color: lightgray;
+    }
+    @media screen and (max-width: 800px) {
+      .article, .about, .links {
+        width: 100%;
+      }
+      .article {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Hello World</h1>
+  </header>
+
+<div class="main">
+
+  <nav class="links">
+    <a href="#not_implemented">Link1</a>
+    <a href="#not_implemented">Link2</a>
+    <a href="#not_implemented">Link3</a>
+    <a href="#not_implemented">Link4</a>
+  </nav>
+
+  <article class="article">
+    <h3>
+      Lorum Ipsum
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+      aliquam erat volutpat.
+    </p>
+  </article>
+
+  <aside class="about">
+    <h3>
+      About
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    </p>
+  </aside>
+</div>
+
+  <div class="copyright">
+    <p>copyright</p>
+  </div>
+</body>
+</html>
